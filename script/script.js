@@ -23,7 +23,7 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
-camera.position.set(0, 20, 120);
+camera.position.set(30, 400, 500);
 
 camera.lookAt(0, 0, 0);
 
@@ -35,18 +35,59 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 const loader = new GLTFLoader();
+
+const models = [];
+
 loader.load(
-  '../assets/3d_models/celeste_mountain.glb',
+  '../assets/3d_models/mountain.glb',
 
   function(gltf) {
 
     const model = gltf.scene;
 
+    model.position.set(0, 0, 0);
+
+    model.scale.set(10, 10, 10);
+
     scene.add(model);
 
-    const helper = new THREE.BoxHelper(model, 0xff0000);
+    models.push(model);
 
-    scene.add(helper);
+  }
+);
+
+loader.load(
+  '../assets/3d_models/buildings.glb',
+
+  function(gltf) {
+
+    const model = gltf.scene;
+
+    model.position.set(0, 0, 0);
+
+    model.scale.set(10, 10, 10);
+
+    scene.add(model);
+
+    models.push(model);
+
+  }
+);
+
+loader.load(
+  '../assets/3d_models/moon.glb',
+
+  function(gltf) {
+
+    const model = gltf.scene;
+
+    model.position.set(0, 0, 0);
+
+    model.scale.set(10, 10, 10);
+
+    scene.add(model);
+
+    models.push(model);
 
   }
 );
@@ -55,7 +96,10 @@ function animate() {
 
   requestAnimationFrame(animate);
 
-  scene.rotation.y += 0.01;
+  // gira cada modelo
+  models.forEach(model => {
+    model.rotation.y += 0.01;
+  });
 
   renderer.render(scene, camera);
 
