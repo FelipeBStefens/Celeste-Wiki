@@ -7,13 +7,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script type="module" src="script/script.js" defer></script>
+        <link rel="stylesheet" href="style/style_mountain.css"></link>
+        
+        <script type="module" src="script/3d_models/main.js" defer></script>
+        <script src="script/home.js" defer></script>
 
         <title>Celeste Wiki</title>
     </head>
 
-    <body style="height: 100vh;">
+    <body>
         
+        <video autoplay loop muted playsinline id="background">
+            <source src="assets/videos/mountain_background.mp4" type="video/mp4">
+        </video>
+
+        <audio id="music" loop>
+            <source src="assets/sounds/celeste_music.mp3" type="audio/mpeg">
+        </audio>
+
         <canvas id="scene"></canvas>
     </body>
 </html>
