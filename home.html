@@ -6,7 +6,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link rel="stylesheet" href="style/style_mountain.css"></link>
         
         <script type="module" src="script/3d_models/main.js" defer></script>
@@ -17,12 +17,12 @@
 
     <body>
         
-        <video autoplay loop muted playsinline id="background">
+        <video autoplay muted loop id="background">
             <source src="assets/videos/mountain_background.mp4" type="video/mp4">
         </video>
 
-        <audio id="music" loop>
-            <source src="assets/sounds/celeste_music.mp3" type="audio/mpeg">
+        <audio autoplay loop id="music">
+            <source src="assets/sounds/celeste_music.mp3" type="audio/mp3">
         </audio>
 
         <canvas id="scene"></canvas>

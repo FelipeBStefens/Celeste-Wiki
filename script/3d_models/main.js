@@ -1,9 +1,11 @@
 import * as THREE from 'https://esm.sh/three@0.180.0';
+import { gsap } from 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js';
 import { GLTFLoader } from 'https://esm.sh/three@0.180.0/examples/jsm/loaders/GLTFLoader.js';
 
 import sceneLights from './light.js';
 import cameraLoad from './camera.js';
 import loadObjects from './loader.js';
+import animate from './animate.js';
 
 const scene = new THREE.Scene();
 const canvasScene = document.getElementById("scene");
@@ -17,15 +19,12 @@ const camera = cameraLoad(THREE);
 let objects = [];
 loadObjects(new GLTFLoader(), scene, (loadedObjects) => {objects = loadedObjects;});
 
-function animate() {
+function generate() {
 
-    requestAnimationFrame(animate);
+    requestAnimationFrame(generate);
 
-    objects.forEach(object => {
-        object.rotation.y += 0.01;
-    });
-
+    animate(camera);
     renderer.render(scene, camera);
 }
 
-animate();
+generate();
