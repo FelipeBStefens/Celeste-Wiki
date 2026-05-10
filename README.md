@@ -5,6 +5,7 @@ A School Project with HTMl and CSS
 
 # To Do
 
+- Colocar Favicon 
 - Fazer desaparecer os H1
 - Colocar Anotações
 
