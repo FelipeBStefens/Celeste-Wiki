@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'celesteFont';
+
+    src: url('../assets/fonts/celeste_font.otf')
+         format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
-
     min-height: 100vh;
     margin: 0 0 0 0;
+    font-family: "celesteFont";
 }

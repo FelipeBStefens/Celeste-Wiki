@@ -117,4 +117,13 @@ export default function sceneLights(scene, renderer, THREE) {
     );
     templeLight.position.set(-3, 90, -20);
     scene.add(templeLight);
+
+    const farewellLight = new THREE.PointLight(
+        0xffed29,
+        500,
+        300
+    );
+    farewellLight.position.set(-5, 317, 9);
+    scene.add(farewellLight);
+    
 };

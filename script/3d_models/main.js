@@ -10,14 +10,6 @@ import animate from './animate.js';
 const scene = new THREE.Scene();
 const canvasScene = document.getElementById("scene");
 
-const testSphere = new THREE.Mesh(
-    new THREE.SphereGeometry(1, 16, 16),
-    new THREE.MeshBasicMaterial({ color: 0xff0000 })
-);
-testSphere.position.set(-3, 90, -20);
-
-scene.add(testSphere);
-
 const renderer = new THREE.WebGLRenderer({canvas: canvasScene, antialias: true, alpha: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 
