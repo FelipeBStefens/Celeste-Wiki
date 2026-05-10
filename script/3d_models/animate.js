@@ -4,17 +4,16 @@ let targetRadius = 280;
 let theta = 1.7;
 let phi = Math.PI / 2.2;
 
-//variancia da posição da camera
 let verticalOffset = 0;
 let targetVerticalOffset = 0;
-//variancia do look at
+
 let displacement = 0;
 let targetDisplacement = 0;
 
 let mouseDown = false;
 let mouseX = 0;
 let mouseY = 0;
-document.getElementsByClassName
+
 document.addEventListener('keydown', (event) => {
 
     if (event.code === 'Space') {
@@ -58,6 +57,7 @@ document.addEventListener('wheel', (event) => {
 });
 
 export default function animate(camera) {
+    
     verticalOffset += (targetVerticalOffset - verticalOffset) * 0.1;
     displacement += (targetDisplacement - displacement) * 0.1;
 
