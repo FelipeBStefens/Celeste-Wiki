@@ -89,7 +89,7 @@ export default function sceneLights(scene, renderer, THREE) {
         15,
         0.5
     );
-    siteLight.position.set(-22, 40, 30);
+    siteLight.position.set(-22, 40, 27);
     scene.add(siteLight);
 
     const hotelLight = new THREE.PointLight(
@@ -124,6 +124,5 @@ export default function sceneLights(scene, renderer, THREE) {
         300
     );
     farewellLight.position.set(-5, 317, 9);
-    scene.add(farewellLight);
-    
+    scene.add(farewellLight);   
 };
