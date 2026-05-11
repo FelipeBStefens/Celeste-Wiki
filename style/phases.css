@@ -1,0 +1,75 @@
+@import url("style.css"); 
+
+body {
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 5%;   
+
+    background-image: linear-gradient(135deg, #02022c 0%, #250854 100%);
+    color: #ffffff;
+}
+
+header h2 {
+
+    font-size: 50px;
+}
+
+#hyperlink {
+
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+#hyperlink h1 {
+
+    font-size: 70px;
+}
+
+#hyperlink img {
+
+    width: 150px;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+
+    width: 75%;
+
+    font-size: 30px;
+}
+
+.image {
+
+    width: 25%;
+}
