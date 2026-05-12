@@ -16,4 +16,5 @@ To apply, we used JS with ThreeJS. The model doesn't have color, so we use a bac
 # Programmers
 
 [Arthur Bernardo Fagundes Martinez](https://github.com/Arthurbe08)
+
 [Felipe Bianchi Stefens](https://github.com/FelipeBStefens)
