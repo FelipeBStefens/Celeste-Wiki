@@ -1,5 +1,5 @@
 
-# [Celeste Wiki] (https://felipebstefens.github.io/Celeste-Wiki/index.html)
+# [Celeste Wiki](https://felipebstefens.github.io/Celeste-Wiki/index.html)
 
 This is a school project that we need to use HTML and CSS to create a simple website in one week. 
 
@@ -15,5 +15,5 @@ To apply, we used JS with ThreeJS. The model doesn't have color, so we use a bac
 
 # Programmers
 
-[Arthur Bernardo Fagundes Martinez] (https://github.com/Arthurbe08)
-[Felipe Bianchi Stefens] (https://github.com/FelipeBStefens)
+[Arthur Bernardo Fagundes Martinez](https://github.com/Arthurbe08)
+[Felipe Bianchi Stefens](https://github.com/FelipeBStefens)
