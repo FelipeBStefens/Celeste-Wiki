@@ -1,7 +1,7 @@
 const MODEL_PATH = [
-    '/assets/3d_models/mountain.glb',
-    '/assets/3d_models/buildings.glb',
-    '/assets/3d_models/moon.glb'
+    './assets/3d_models/mountain.glb',
+    './assets/3d_models/buildings.glb',
+    './assets/3d_models/moon.glb'
 ];
 
 export default function loadObjects(loader, scene, callback) {
